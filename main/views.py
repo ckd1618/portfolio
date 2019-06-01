@@ -42,8 +42,10 @@ def login(request):
 
     result = bcrypt.checkpw(request.POST['password'].encode(), user.password.encode())
 
-    if result: # && user.id == 1
+    if result and (user.id == 1):
         request.session['userId'] = user.id
+    elif user.id != 1:
+        messages.error(request, 'You are not authorized to enter.')
     else:
         messages.error(request, 'Your Email or Password does not match.')
     return redirect('/dashboard')

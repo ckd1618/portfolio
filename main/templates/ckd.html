@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,16 +18,16 @@
         <div class='registerbox'>
             <form class='ib' action="/register" method="POST">
                 {% csrf_token %}
-                <p>First Name: &ensp;<input type="text" name="firstName"></p><br>
-                <p>Last Name: &ensp;<input type="text" name="lastName"></p><br>
-                <p>Email: &emsp; &emsp; <input type="email" name="email"></p><br>
-                <p>Password: &emsp; <input type="password" name="password"></p><br>
+                <p>First Name: <input type="text" name="firstName"></p><br>
+                <p>Last Name: <input type="text" name="lastName"></p><br>
+                <p>Email: <input type="email" name="email"></p><br>
+                <p>Password: <input type="password" name="password"></p><br>
                 <p>Confirm PW: <input type="password" name="confirm"></p><br>
                 <input type="submit" value="Register">
             </form>
         </div>
     </div>
-
+    <!-- &emsp;  -->
     <div class='masterdiv2'>
         <h2>Login</h2>
         <div class='loginbox'>
