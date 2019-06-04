@@ -22,3 +22,16 @@
     padding: 3em !important;
   }
 }
+
+.listTitle {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.c {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+}

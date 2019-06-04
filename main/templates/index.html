@@ -30,13 +30,13 @@
                 <h1 class="display-3">Chris K Darakjian</h1>
                 <!-- <div class="d-none d-md-block"> -->
                 <div>
-                  <a href="http://github.com" class="text-white">
+                  <a href="https://github.com/ckd1618" class="text-white">
                     <i class="fab fa-github fa-lg"></i>
                   </a>
                 </div>                
                 
                   <div>
-                  <a href="http://linkedin.com" class="text-white">
+                  <a href="https://www.linkedin.com/in/chris-darakjian/" class="text-white">
                     <i class="fab fa-linkedin-in fa-lg"></i>
                   </a>
                 </div>
@@ -110,7 +110,75 @@
     </div>
 
     <!-- RESUME -->
+
     <div id="resume" class="collapse">
+      <div class="card card-body bg-success text-white py-5">
+        <h2>My Resume</h2>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!</p>
+      </div>
+      
+      <div class="card card-body py-5">
+        <div class="row justify-content-center">
+          <div class="col align-items-start">
+            <p class="listTitle" >Languages</p><br>
+            <p class="c" >Javascript</p><br>
+            <p class="c" >Python</p><br>
+            <p class="c" >Java</p><br>
+            <p class="c" >SQL</p><br>
+            <p class="c" >HTML</p><br>
+            <p class="c" >CSS</p><br>
+          </div>
+          <div class="col align-items-start">
+            <p class="listTitle" >Backend</p><br>
+            <p class="c" >Django</p><br>
+            <p class="c" >Node</p><br>
+            <p class="c" >Spring Boot</p><br>
+            <p class="c" >Flask</p><br>
+            <p class="c" >Java Web Servlet</p><br>
+          </div>
+          <div class="col align-items-start">
+            <p class="listTitle" >Frontend</p><br>
+            <p class="c" >Angular</p><br>
+            <p class="c" >React</p><br>
+            <p class="c" >Express.js</p><br>
+            <p class="c" >Bootstrap</p><br>
+            <p class="c" >Semantic UI</p><br>
+          </div>
+          <div class="col align-items-start">
+            <p class="listTitle" >Dev Tools</p><br>
+            <p class="c" >MySQL Workbench</p><br>
+            <p class="c" >Postman</p><br>
+            <p class="c" >Docker</p><br>
+            <p class="c" >SQLite Browser</p><br>
+            <p class="c" >VS code</p><br>
+          </div>
+          <div class="col align-items-start">
+            <p class="listTitle" >Amazon</p><br>
+            <p class="c" >EC2</p><br>
+            <p class="c" >S3</p><br>
+            <p class="c" >Lambda</p><br>
+            <p class="c" >IAM</p><br>
+          </div>
+          <div class="col align-items-start">
+            <p class="listTitle" >Databases</p><br>
+            <p class="c" >MySQL</p><br>
+            <p class="c" >NoSQL (MongoDB)</p><br>
+            <p class="c" >SQLite</p><br>
+          </div>
+          <div class="col align-items-start">
+              <p class="listTitle" >Libraries/Misc</p><br>
+              <p class="c" >Mongoose</p><br>
+              <p class="c" >Socket.io</p><br>
+              <p class="c" >Stripe</p><br>
+              <p class="c" >JQuery</p><br>
+              <p class="c" >Ajax</p><br>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- <div id="resume" class="collapse">
       <div class="card card-body bg-success text-white py-5">
         <h2>My Resume</h2>
         <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!</p>
@@ -169,7 +237,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- WORK -->
     <!-- <div id="work" class="collapse">
@@ -239,7 +307,8 @@
       <div class="card card-body py-5">
         <h3>Get In Touch</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos illo, dicta id voluptates enim.</p>
-        <form>
+        <form action="/createNote" method="POST">
+          {% csrf_token %}
           <div class="form-group">
             <div class="input-group input-group-lg">
               <div class="input-group-prepend">
@@ -247,7 +316,7 @@
                   <i class="fas fa-user"></i>
                 </span>
               </div>
-              <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+              <input type="text" name="name" class="form-control bg-dark text-white" placeholder="Name">
             </div>
           </div>
 
@@ -258,7 +327,7 @@
                   <i class="fas fa-envelope"></i>
                 </span>
               </div>
-              <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+              <input type="email" name="email" class="form-control bg-dark text-white" placeholder="Email">
             </div>
           </div>
 
@@ -269,7 +338,7 @@
                   <i class="fas fa-pencil-alt"></i>
                 </span>
               </div>
-              <textarea class="form-control bg-dark text-white" placeholder="Message"></textarea>
+              <textarea class="form-control bg-dark text-white" name="message" placeholder="Message"></textarea>
             </div>
           </div>
 

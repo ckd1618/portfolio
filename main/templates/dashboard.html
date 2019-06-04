@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/c1.css' %}"> 
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    
+        <!-- Compiled and minified JavaScript -->
+    
 
     <style>
         .floatr {
@@ -22,10 +29,91 @@
 </head>
 <body>
     <a class='floatr' href="/logout">Logout</a>
-    <!-- <a class='floatr' href="{% url 'main:logout' %}">Logout</a> -->
-
+    <br>
+    {% for n in notes reversed %}
+        <p class="c">{{n.id}} {{n.name}} {{n.email}} {{n.createdAt|date:'l P n/d/Y'}} {{n.message|linebreaksbr}}</p>
+        
+    {% endfor %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
 </html>
+
+    <!-- <a class='floatr' href="{% url 'main:logout' %}">Logout</a> -->
+<!-- 
+    <div class="row">
+            <div class="col l6">
+                <h3>Your Messages</h3>
+            </div>
+            <div class="col l3">
+                <h4>Hello {{user.firstName}}</h4>
+            </div>
+            <div class="col l3">
+                <a href="/logout">Logout</a>
+            </div>
+        </div> -->
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col l12">
+                    <form action="/message" method='POST'>
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" name="content" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Message</label>
+                            </div>
+                        </div>
+                        <button class="waves-effect waves-light btn">Post</button>
+                    </form>
+                </div>
+            </div> -->
+      
+            <!-- {% for n in notes %}
+                <div class="row">
+    
+                    <div class="col s12">
+                        <div class="card blue-grey">
+                            <div class="card-content white-text">
+                                <span class="card-title">{{n.name}} {{n.email}}</span>
+                                <p>{{n.message|linebreaksbr}}</p>
+                            </div>
+                            <div class="card-action">
+                                <h6>{{n.createdAt|date:'N d P'}}</h6>
+                            </div>
+                        </div> -->
+                        <!-- {% for c in m.messages_comments.all %}
+                            <div class="col l3"></div>
+                            <div class="col l9">
+                                <div class="card pink lighten-3">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">{{c.user.first_name}} {{c.user.last_name}}</span>
+                                        <p>{{c.content|linebreaksbr}}</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <h6>{{c.created_at|date:'N d P'}}</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %} -->
+                    <!-- </div> -->
+                    <!-- <div class="col l3"></div>
+                    <div class="col l9">
+                        <form action="/comment/{{m.id}}" method="POST">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" name="content" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Comment</label>
+                                </div>
+                            </div>
+                            <button class="waves-effect waves-light btn">Comment</button>
+                        </form>
+                    </div> -->
+    
+                <!-- </div>
+            {% endfor %} -->
+    <!-- </div> -->
+
+
     <!-- <h1>Welcome {{user.firstName}}!</h1>
     <h1>Your Trip Schedules</h1>
 

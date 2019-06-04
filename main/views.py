@@ -50,12 +50,19 @@ def login(request):
         messages.error(request, 'Your Email or Password does not match.')
     return redirect('/dashboard')
 
+def createNote(request):
+    form = request.POST
+    newNote = Note.objects.create(name = form['name'], email=form['email'], message=form['message'])
+    # sent = "Your message has been sent."
+    return redirect('/')
+
 def dashboard(request):
 
     if not 'userId' in request.session:
         messages.error(request, 'You need to login.')
         return redirect('/ckd')
 
+    notes = Note.objects.all()
     user = User.objects.get(id=request.session['userId'])
     # myplans = Trip.objects.filter(user=user)
     # presentuserid = request.session['userId']
@@ -66,7 +73,9 @@ def dashboard(request):
     # myusertrips = Trip.objects.filter(id=request.session['userId'])
     
     context = {
+        'notes': notes,
         'user': user,
+        'array5': [1,2,3,4,5],
         # 'myplans': myplans,
         # 'myusertrips' : myusertrips,
         # 'presentuserid': presentuserid,
@@ -76,6 +85,8 @@ def dashboard(request):
     }
 
     return render(request, 'dashboard.html', context)
+
+
 
 def logout(request):
 
