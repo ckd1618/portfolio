@@ -1,18 +1,17 @@
 {% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link rel="stylesheet" type="text/css" href="{% static 'css/materialize.min.css' %}" media="screen,projection">
   <link type="text/css" rel="stylesheet" href="{% static 'css/main.css' %}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chris Darakjian Portfolio</title>
 </head>
 
@@ -22,8 +21,8 @@
       <div class="navbar-fixed">
         <nav class="transparent">
           <div class="container">
-            <l class="nav-wrapper">
-              <a href="#home" class="brand-logo myBlock">Chris K. Darakjian</a>
+            <div class="nav-wrapper">
+              <a href="#home" class="brand-logo">BizLand</a>
               <a href="#" data-activates="mobile-nav" class="button-collapse">
                 <i class="material-icons">menu</i>
               </a>
@@ -43,56 +42,46 @@
                 <li>
                   <a href="{% static 'download/Resume_Chris K Darakjian.docx' %}" class="btn blue">Download Resume</a>
                 </li>
-
-                <li>
-                  <a href="https://github.com/ckd1618" class="text-white">
-                    <i class="fab fa-github fa-lg"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/chris-darakjian/" class="text-white">
-                    <i class="fab fa-linkedin-in fa-lg"></i>
-                  </a>
-                </li>
-
               </ul>
+            </div>
           </div>
+        </nav>
       </div>
-      </nav>
-    </div>
-    <!-- Side nav -->
-    <ul class="side-nav" id="mobile-nav">
-      <h4 class="blue-grey darken-3 center">BizLand</h4>
-      <li>
-        <a class="divider"></a>
-      </li>
-      <li>
-        <a href="#home">Home</a>
-      </li>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#testimonials">Testimonials</a>
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-    </ul>
-    <!-- Showcase -->
-    <div class="showcase container" id="image-test">
-      <div class="row">
-        <div class="col s12 main-text">
-          <h5>Full Stack Web Developer</h5>
-
-          <img src="{% static 'img/myPic3.jpg' %}" alt="my picture" class="circle responsive-img smallerPic">
-          <br>
-          <a href="#contact" class="white-text">
-            <i class="material-icons medium scroll-icon">arrow_drop_down_circle</i>
-          </a>
+      <!-- Side nav -->
+      <ul class="side-nav" id="mobile-nav">
+        <h4 class="blue-grey darken-3 center">BizLand</h4>
+        <li>
+          <a class="divider"></a>
+        </li>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#testimonials">Testimonials</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Showcase -->
+      <div class="showcase container">
+        <div class="row">
+          <div class="col s12 main-text" id='image-test'>
+            <h5>You found the...</h5>
+            <h1>Right Place To Start</h1>
+            <p class="flow-text">To take your business to the next level with our services that have taken companies to
+              the fortune 500</p>
+            <br>
+            <a href="#about" class="btn btn-large white black-text">Learn More</a>
+            <a href="#contact" class="white-text">
+              <i class="material-icons medium scroll-icon">arrow_drop_down_circle</i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </header>
 
@@ -171,6 +160,107 @@
     </div>
   </section>
 
+  <!-- Section: Main SCROLLFIRE -->
+  <section class="section section-main">
+    <div class="container">
+      <!-- Row 1 -->
+      <div class="row row-1">
+        <div class="col m6 hide-on-small-only">
+          <div class="img-content">
+            <h3>Diligord</h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut est similique aut officia unde ratione a
+            impedit sunt numquam
+            ea?
+          </div>
+        </div>
+        <div class="col m6">
+          <div class="card" id="image-test">
+            <div class="card-image">
+              <img src="img/gallery/abstract1.jpg" alt="">
+              <span class="card-title">Diligord</span>
+              <a href="#abstract1" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+                <i class="material-icons">add</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <p>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row row-2">
+        <div class="col m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/gallery/abstract2.jpg" alt="">
+              <span class="card-title">Aleressa</span>
+              <a href="#abstract2" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+                <i class="material-icons">add</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <p>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star_half</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col m6 hide-on-small-only">
+          <div class="img-content">
+            <h3>Aleressa</h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut est similique aut officia unde ratione a
+            impedit sunt numquam
+            ea?
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="row row-3">
+        <div class="col m6 hide-on-small-only">
+          <div class="img-content">
+            <h3>Recogged</h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut est similique aut officia unde ratione a
+            impedit sunt numquam
+            ea?
+          </div>
+        </div>
+        <div class="col m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/gallery/abstract3.jpg" alt="">
+              <span class="card-title">Recogged</span>
+              <a href="#abstract3" class="btn-floating halfway-fab waves-effect waves-light red modal-trigger">
+                <i class="material-icons">add</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <p>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Section: Testimonials -->
   <section id="testimonials" class="section section-testimonials blue white-text center scrollspy">
     <div class="container">
@@ -222,36 +312,30 @@
     </div>
   </section>
 
-
   <!-- Section: Contact -->
-  <section id="contact" class="section section-contact center scrollspy noPadding">
-    <div class="parallax-container">
-      <div class="parallax">
-        <img src="{% static 'img/code.jpg' %}" alt="code img">
-
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m6 offset-m6">
-              <div class="card-panel z-depth-5">
-                <form name="myForm" action="/createNote" method="POST" onsubmit="return validateForm()">
-                  {% csrf_token %}
-                  <h4>Contact Me</h4>
-                  <div class="input-field">
-                    <input type="text" id="name" name="name" placeholder="Name">
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="input-field">
-                    <input type="email" id="email" name="email" placeholder="Email">
-                    <label for="email">Email</label>
-                  </div>
-                  <div class="input-field">
-                    <textarea class="materialize-textarea" name="message" id="message" placeholder="Message"></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                  <input type="submit" value="Submit" class="btn blue-grey">
-                </form>
+  <section id="contact" class="section section-contact center scrollspy">
+    <div id="googlemap"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 offset-m6">
+          <div class="card-panel z-depth-5">
+            <form name="myForm" action="/createNote" method="POST" onsubmit="return validateForm()">
+              {% csrf_token %}
+              <h4>Contact Me</h4>
+              <div class="input-field">
+                <input type="text" id="name" name="name" placeholder="Name">
+                <label for="name">Name</label>
               </div>
-            </div>
+              <div class="input-field">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <textarea class="materialize-textarea" name="message" id="message" placeholder="Message"></textarea>
+                <label for="message">Message</label>
+              </div>
+              <input type="submit" value="Submit" class="btn blue-grey">
+            </form>
           </div>
         </div>
       </div>
@@ -259,7 +343,33 @@
   </section>
 
   <!-- Footer -->
-  <footer class="page-footer blue-grey darken-4">
+  <footer class="page-footer blue-grey darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>Location</h5>
+          <p>Bizland, INC</p>
+          <p>555 Somewhere Drive, Boston MA</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="white-text" href="#about">About</a>
+            </li>
+            <li>
+              <a class="white-text" href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a class="white-text" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="footer-copyright blue-grey darken-4">
       <div class="container">
         Chris K. Darakjian Portfolio
@@ -274,6 +384,7 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
   <script>
     $(document).ready(function () {
       // Init Sidenav
@@ -282,27 +393,24 @@
       // Init Scrollspy
       $('.scrollspy').scrollSpy();
 
-      $('.parallax').parallax();
-
-      // ScrollFire
       const options = [
         {
           selector: '.main-text', offset: 0, callback: function (el) {
             Materialize.fadeInImage($(el));
           }
         },
+        {
+          selector: '.navbar-fixed', offset: 1500, callback: function () {
+            $('nav').removeClass('transparent');
+            $('nav').addClass('blue-grey darken-3');
+          }
+        },
+        {
+          selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test")';
+        },
       ];
 
-
     });
-  </script>
-
-
-
-
-  <!-- more -->
-
-  <script>
     function validateForm() {
       var x = document.forms["myForm"]["name"].value;
       var y = document.forms["myForm"]["email"].value;
@@ -316,20 +424,10 @@
         return true;
       }
     }
-    var options = [
-      { selector: '#image-test', offset: 500, callback: 'Materialize.fadeInImage("#image-test")' },
-      {
-        selector: '.navbar-fixed', offset: 1500, callback: function () {
-          $('nav').removeClass('transparent');
-          $('nav').addClass('blue-grey darken-3');
-        }
-      }
-    ];
+
+
     Materialize.scrollFire(options);
-
-
   </script>
-
 </body>
 
 </html>

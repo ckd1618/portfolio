@@ -86,7 +86,15 @@ def dashboard(request):
 
     return render(request, 'dashboard.html', context)
 
+def deletenum(request, num1):
+    if not 'userId' in request.session:
+        messages.error(request, 'You need to login.')
+        return redirect('/ckd')
+    
+    deleteNote = Note.objects.get(id=num1)
+    deleteNote.delete()
 
+    return redirect('/dashboard')
 
 def logout(request):
 

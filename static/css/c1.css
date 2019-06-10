@@ -35,9 +35,13 @@ input {
     width: 400px;
 
 }
-.c {
-    text-align: center;
+.b {
     font-size: 1.2rem;
-    padding: 0;
-    margin: 0;
+}
+.c {
+    text-align: left;
   }
+.e {
+    /* display:inline-block; */
+    float: right;
+}

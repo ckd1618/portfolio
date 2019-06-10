@@ -31,10 +31,19 @@
     <a class='floatr' href="/logout">Logout</a>
     <br>
     {% for n in notes reversed %}
-        <p class="c">{{n.id}} {{n.name}} {{n.email}} {{n.createdAt|date:'l P n/d/Y'}} {{n.message|linebreaksbr}}</p>
+        <p class="c b"><b>{{n.id}}</b> {{n.name}} <b>{{n.email}}</b> {{n.createdAt|date:'l P n/d/Y'}} </p>
+        <p class="c b"><b>{{n.message|linebreaksbr}}</b> <button class="e" onclick="askToDelete('{{ n.id }}')">Delete</button> </p>
+        <!-- <p class="e b" ></p> -->
+        <br>
         
     {% endfor %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+        function askToDelete(id) {
+            var myBool = confirm(`Delete post ${id}?`)
+            if (myBool) window.location.href=`/delete/${id}`;
+        }
+    </script>
 </body>
 </html>
 
