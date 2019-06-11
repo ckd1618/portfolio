@@ -16,8 +16,18 @@
   margin-bottom: 0px !important;
 }
 
+
+
+.mypurple {
+  color: purple;
+}
+
 .mycolor {
-  color: white;
+  color: rgb(255, 208, 0);
+}
+
+.mybackground {
+  background-color: rgb(255, 208, 0);
 }
 
 .iframe-container{ 
