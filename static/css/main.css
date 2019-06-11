@@ -9,7 +9,12 @@
 } */
 
 .smallerPic {
-  width: 30%;
+  width: 70%;
+  
+}
+
+.picParent {
+  text-align: right;
 }
 
 .noPadding {
@@ -35,8 +40,9 @@
 }
 
 .main-header .showcase {
-  padding-top: 110px;
+  padding-top: 50px;
 }
+
 
 .scroll-icon {
   position: absolute;
