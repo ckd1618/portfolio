@@ -23,7 +23,7 @@
         <nav class="transparent">
           <div class="container">
             <l class="nav-wrapper">
-              <a href="#home" class="brand-logo myBlock">Portfolio</a>
+              <a href="#home" class="brand-logo myBlock"></a>
               <a href="#" data-activates="mobile-nav" class="button-collapse">
                 <i class="material-icons">menu</i>
               </a>
@@ -32,16 +32,16 @@
                   <a href="#home">Home</a>
                 </li>
                 <li>
-                  <a href="#about">About</a>
+                  <a href="#testimonials">Apps</a>
                 </li>
                 <li>
-                  <a href="#testimonials">Testimonials</a>
+                  <a href="#about">In-the-Works</a>
                 </li>
                 <li>
                   <a href="#contact">Contact</a>
                 </li>
                 <li>
-                  <a href="{% static 'download/Resume_Chris K Darakjian.docx' %}" class="btn blue">Download Resume</a>
+                  <a href="{% static 'download/Resume_Chris_K_Darakjian.docx' %}" class="btn blue">Download Resume</a>
                 </li>
 
                 <li>
@@ -70,10 +70,10 @@
         <a href="#home">Home</a>
       </li>
       <li>
-        <a href="#about">About</a>
+        <a href="#testimonials">Apps</a>
       </li>
       <li>
-        <a href="#testimonials">Testimonials</a>
+        <a href="#about">In-the-Works</a>
       </li>
       <li>
         <a href="#contact">Contact</a>
@@ -103,7 +103,7 @@
   </header>
 
   <!-- Section: Boxes -->
-  <section class="section-boxes center">
+  <!-- <section class="section-boxes center">
     <div class="row">
       <div class="col s12 m6 l3 blue white-text box">
         <i class="material-icons medium">show_chart</i>
@@ -134,52 +134,148 @@
           eaque et?</p>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- Section: About -->
-  <section id="about" class="scrollspy">
 
-  </section>
 
   <!-- Section: Testimonials -->
   <section id="testimonials" class="section section-testimonials blue white-text center scrollspy">
     <div class="container">
-      <h2>My Deployed Projects</h2>
+      <h2>My Deployed Apps</h2>
       <div class="row">
         <div class="col s12 m4">
           <div class="card grey lighten-4 black-text z-depth-4">
 
             Ecommerce Store
-            <img style="display: inline;" src="{% static 'img/poofyImg.jpg' %}" alt="website picture"
-              class="responsive-img">
+            <a href="http://18.236.69.2/shop/">
+              <img style="display: inline;" src="{% static 'img/poofyImg.jpg' %}" alt="website picture"
+                class="responsive-img">
+            </a>
             Django, AWS EC2, Stripe
-            <div class="card-action">
-              Users can signup and purchase bean bags or plushies. Checkout is handled with Stripe. Users can view their
-              purchase history. Admin can make changes to what items go on sale.
+            <a href="https://github.com/ckd1618/poofy" class="text-white">
+              <i class="fab fa-github fa-lg"></i> (code)
+            </a>
+            <div class="iframe-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WK3cUs9-3BM" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
+            <p class="margin0">
+              2 min Video Description
+            </p>
+
           </div>
         </div>
         <div class="col s12 m4">
 
           <div class="card grey lighten-4 black-text z-depth-4">
             NASA Hackathon Project
-            <img style="display: inline;" src="{% static 'img/disasterImg.jpg' %}" alt="website picture"
-              class="responsive-img">
+            <a href="http://34.216.220.182">
+              <img style="display: inline;" src="{% static 'img/disasterImg.jpg' %}" alt="website picture"
+                class="responsive-img">
+            </a>
             MEAN Stack, AWS EC2
+            <a href="https://github.com/ckd1618/disasterCkd" class="text-white">
+              <i class="fab fa-github fa-lg"></i> (code)
+            </a>
+            <div class="iframe-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/L0IkEwimYvE" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p class="margin0">
+              2 min Video Description
+            </p>
+
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card grey lighten-4 black-text z-depth-4">
             Utube-Yahtzee Game
-            <img style="display: inline;" src="{% static 'img/utubeYahtzeeImg.jpg' %}" alt="website picture"
-              class="responsive-img">
+            <a href="http://utubeyahtzee.s3-website-us-west-2.amazonaws.com">
+              <img style="display: inline;" src="{% static 'img/utubeYahtzeeImg.jpg' %}" alt="website picture"
+                class="responsive-img">
+            </a>
             React, AWS S3
+            <a href="https://github.com/ckd1618/UtubeYahtzee" class="text-white">
+              <i class="fab fa-github fa-lg"></i> (code)
+            </a>
+            <div class="iframe-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/lyqugGFXftE" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p class="margin0">
+              1 min Video Description
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <div class="parallax-container" style="height: 70px;">
+    <div class="parallax">
+      <img src="{% static 'img/code.jpg' %}" alt="code img">
+    </div>
+  </div>
+
+  <!-- Section: About -->
+  <section id="about" class="scrollspy backgroundEdit">
+    <!-- <div class="container"> -->
+    <div class="row ">
+      <div class="col s12 m6 l3 blue white-text box center mywidth">
+        <!-- <i class="material-icons medium">show_chart</i> -->
+        <h4 style="padding: 0px;">AI for Trading </h4>
+        <h5>(Python)</h5>
+        <p>
+          </a>Udacity projects designed to use AI techniques
+          to aid in
+          trading. (Terms 1 & 2) <br><br>
+          Tech used: NLP, RNN, LSTM, Random Forests, Jupyter Notebook<br><br>
+        </p>
+        <a href="https://github.com/ckd1618/ai4trading" class="mycolor">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+
+      </div>
+      <div class="col s12 m6 l3 purple white-text box center mywidth">
+        <h4 style="padding: 0px;">"Ideas" App </h4>
+        <h5>(Java Spring Boot)</h5>
+        <p>
+          Users can register and post ideas to a dashboard, and can “like” posts they read. Utilizes CRUD. <br><br>
+          Tech used: Spring Boot, MySQL, HTML, CSS<br><br>
+        </p>
+        <a href="https://github.com/ckd1618/java_springboot_app" class="mycolor">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+      </div>
+      <div class="col s12 m6 l3 teal white-text box center mywidth">
+
+        <h4 style="padding: 0px;">Notes in Real-Time</h4>
+        <h5>(React & Django)</h5>
+        <p>
+          Users can chat together in real-time using websockets. <br><br>
+          Tech used: Websocket, Docker, Redis, React, Django, Bootstrap, SQLite, HTML, CSS<br><br>
+        </p>
+        <a href="https://github.com/ckd1618/notes" class="mycolor">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+      </div>
+      <div class="col s12 m6 l3 amber darken-4 white-text center box mywidth">
+        <h4 style="padding: 0px;">Serverless Chat</h4>
+        <h5>(AWS Lambda)</h5>
+        <p>
+          Users can register and chat without a server using a number of AWS services. <br><br>
+          AWS: Lambda, DynamoDB, CloudFront, IAM, S3, Cognito<br><br>
+        </p>
+        <a href="https://github.com/ckd1618/ChatOnline_AWSLambda" class="mycolor">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+      </div>
+    </div>
+    <!-- </div> -->
+  </section>
 
   <!-- Section: Contact -->
   <section id="contact" class="section section-contact center scrollspy noPadding">
@@ -220,7 +316,7 @@
   <footer class="page-footer blue-grey darken-4">
     <div class="footer-copyright blue-grey darken-4">
       <div class="container">
-        Chris K. Darakjian Portfolio
+        Chris K. Darakjian &emsp; (818) 984-7959 &emsp; ckd1618@gmail.com
         <a class="grey-text text-lighten-4 right" href="#home">
           <i class="material-icons left">keyboard_arrow_up</i> Back To Top
 
@@ -259,7 +355,7 @@
 
 
 
-  <!-- more -->
+  <!-- In-the-Works -->
 
   <script>
     function validateForm() {
