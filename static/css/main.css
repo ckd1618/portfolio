@@ -8,6 +8,13 @@
   overflow: hidden;
 } */
 
+.myzback {
+  z-index: -1 !important;
+}
+.myzfront{
+  z-index: 10 !important;
+}
+
 .backgroundEdit {
   background-color: rgb(36, 36, 36);
 }
