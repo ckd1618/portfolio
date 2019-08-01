@@ -1,7 +1,7 @@
 # portfolio
 my portfolio  
 
-deployed at:  http://34.216.74.243  
+deployed at:  http://34.216.74.243  (currently down, for updates)
 
 To run the project locally:
 1.) open a terminal and install a virtual environment for the project the run in:
